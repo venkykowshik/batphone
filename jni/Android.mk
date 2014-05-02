@@ -1,5 +1,9 @@
 LOCAL_PATH:= $(call my-dir)
 
+# Build srelay binary
+include $(CLEAR_VARS)
+include $(LOCAL_PATH)/srelay/Android.mk
+
 # Build iwconfig binary
 include $(CLEAR_VARS)
 LOCAL_MODULE:= iwconfig
